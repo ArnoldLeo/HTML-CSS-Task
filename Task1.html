@@ -8,53 +8,58 @@
 <body>
     <h1>Registration Form:Dance Club</h1>
     <hr>
-    <table border="2px" cellspacing="0px" cellpadding="2px">
-        <tr>
-            <td style="width: 15%;"><b>Name:</b></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><b>IC No:</b> </td>
-            <td><input type="number">-<input type="number">-<input type="number"></td>
-        </tr>
-        <tr>
-            <td><b>Address:</b></td>
-            <td><textarea name="address" rows=4 cols=100></textarea></td>
-        </tr>
-        <tr>
-            <td><b>Gender:</b></td>
-            <td><input type="radio" name="gender" value="Male">Male
-                <input type="radio" name="gender" value="Female">Female</td>
-        </tr>
-        <tr>
-            <td><b>Dance Type:</b></td>
-            <td><input type="checkbox"name="style" value="Zapin">Zapin
-                <input type="checkbox"name="style" value="Joget">Joget
-                <input type="checkbox"name="style" value="Inang">Inang
-                <input type="checkbox"name="style" value="LionDance">LionDance</td>
-        </tr>
-        <tr>
-            <td><b>Competition:</b></td>
-            <td><select name="Type" multiple>
-                <option>State Level</option>
-                <option>National Level</option>
-                <option>StateInternational Level</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td><b>Nationality:</b></td>
-            <td><select name="National" >
-                <option value="None">Please Select</option>
-                <option value="Indian">INDIAN</option>
-                <option value="NRI">NON RESIDENT OF INDIA</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td><b>Password:</b> </td>
-            <td><input type="password"></td>
-        </tr>
-    </table>
+    <form>
+        <table border="2px" cellspacing="0px" cellpadding="2px">
+            <tr>
+                <td style="width: 15%;"><b>Name:</b></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>IC No:</b> </td>
+                <td><input type="number">-<input type="number">-<input type="number"></td>
+            </tr>
+            <tr>
+                <td><b>Address:</b></td>
+                <td><textarea name="address" rows=4 cols=100></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Gender:</b></td>
+                <td><input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td><b>Dance Type:</b></td>
+                <td><input type="checkbox" name="style" value="Zapin">Zapin
+                    <input type="checkbox" name="style" value="Joget">Joget
+                    <input type="checkbox" name="style" value="Inang">Inang
+                    <input type="checkbox" name="style" value="LionDance">LionDance
+                </td>
+            </tr>
+            <tr>
+                <td><b>Competition:</b></td>
+                <td><select name="Type" multiple>
+                        <option>State Level</option>
+                        <option>National Level</option>
+                        <option>StateInternational Level</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><b>Nationality:</b></td>
+                <td><select name="National">
+                        <option value="None">Please Select</option>
+                        <option value="Indian">INDIAN</option>
+                        <option value="NRI">NON RESIDENT OF INDIA</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><b>Password:</b> </td>
+                <td><input type="password"></td>
+            </tr>
+        </table>
+        <button type="button" onclick="alert('Registered Successfully!')">Register Me</button>
+        <button type="button">Cancel</button>
+    </form>
 </body>
-<button type="button" onclick="alert('Registered Successfully!')">Register Me</button>
-<button type="button">Cancel</button>
+
 </html>
